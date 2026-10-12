@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clinical Perimeter — Penetration Testing for Healthcare Software Vendors</title>
+<meta name="description" content="Web application penetration testing built for healthcare software vendors: staging-only, synthetic data, OWASP WSTG methodology, findings report and attestation letter. $5,500 flat.">
+<style>
+  :root{
+    --ink:#14201C; --deep:#0C2B26; --teal:#0E7A63; --teal-dark:#0A5C4B;
+    --mint:#E7F2EE; --paper:#FAFAF7; --card:#FFFFFF; --line:#DDE5E0;
+    --muted:#54655E; --accent:#C9902E; --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  header{background:var(--deep);color:#fff}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+  .brand{font-weight:800;font-size:22px;letter-spacing:.4px}
+  .brand span{color:#7FD1BC}
+  .brand small{display:block;font-weight:500;font-size:12.5px;color:#A9C6BE;letter-spacing:0}
+  nav a{color:#E4F0EC;text-decoration:none;margin-left:22px;font-size:15px}
+  nav a:hover{color:#7FD1BC}
+  nav a.cta{background:var(--accent);color:#221A08;padding:8px 16px;border-radius:8px;font-weight:700}
+  nav a.cta:hover{color:#221A08;background:#DCA53E}
+  .hero{background:linear-gradient(180deg,var(--deep) 0%,#0A201B 100%);color:#fff;padding:56px 0 64px}
+  .hero h1{font-size:41px;line-height:1.16;margin:0 0 18px;font-weight:800}
+  .hero h1 em{font-style:normal;color:#7FD1BC}
+  .hero p.lede{font-size:19.5px;color:#CFE2DC;max-width:740px;margin:0 0 28px}
+  .hero .actions a{display:inline-block;margin-right:14px;padding:13px 24px;border-radius:9px;text-decoration:none;font-weight:700;font-size:16px}
+  .btn-gold{background:var(--accent);color:#221A08}
+  .btn-ghost{border:1.5px solid #5E857A;color:#E4F0EC}
+  .hero .note{margin-top:22px;font-size:14px;color:#93B3AA}
+  section{padding:56px 0 6px}
+  h2{font-size:28px;color:var(--deep);margin:0 0 8px;font-weight:800}
+  .kicker{text-transform:uppercase;letter-spacing:2.5px;font-size:12.5px;color:var(--teal);font-weight:700;margin:0 0 10px}
+  .sub{color:var(--muted);max-width:760px;margin:0 0 30px;font-size:17px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .card h3{margin:0 0 8px;font-size:18px;color:var(--deep)}
+  .card p{margin:0 0 10px;font-size:15.5px;color:#33423C}
+  .card ul{margin:0;padding-left:18px;font-size:15.5px;color:#33423C}
+  .card li{margin-bottom:6px}
+  .price-band{background:var(--deep);color:#E4F0EC;border-radius:var(--radius);padding:32px 36px;margin:26px 0 6px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+  .price-band .amount{font-size:38px;font-weight:800;color:#fff}
+  .price-band p{margin:4px 0 0;color:#A9C6BE;font-size:15.5px;max-width:520px}
+  .warn{background:#FDF6E4;border:1px solid #EBD9A0;border-radius:var(--radius);padding:18px 22px;font-size:15.5px;color:#5C4A12}
+  footer{background:#081C18;color:#A9C6BE;margin-top:64px;padding:38px 0 30px;font-size:14.5px}
+  footer a{color:#E4F0EC}
+  footer .fine{margin-top:22px;padding-top:16px;border-top:1px solid #1D3A34;font-size:13px;color:#77958B}
+  @media (max-width:640px){ .hero h1{font-size:31px} nav a{margin-left:14px} nav a.hideS{display:none} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap topbar">
+    <div class="brand">Clinical <span>Perimeter</span>
+      <small>AugustInnovations LLC dba Clinical Perimeter</small>
+    </div>
+    <nav>
+      <a class="hideS" href="#offer">The test</a>
+      <a class="hideS" href="#method">Method</a>
+      <a class="hideS" href="#about">About</a>
+      <a class="cta" href="#contact">Scope a test</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Penetration testing for <em>healthcare software</em>, by someone who has run it.</h1>
+    <p class="lede">Your buyers are asking how you protect patient data. Clinical Perimeter tests your web application the way an attacker would — in staging, with synthetic data — and gives you the report and attestation letter your buyers, your HIPAA risk analysis, and your SOC 2 prep actually ask for.</p>
+    <div class="actions">
+      <a class="btn-gold" href="#contact">Scope a test</a>
+      <a class="btn-ghost" href="#offer">See what's included</a>
+    </div>
+    <p class="note">One application. One flat price. No production systems, no real patient data — ever.</p>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section id="offer">
+    <p class="kicker">The test</p>
+    <h2>Web Application Penetration Test — $5,500 flat</h2>
+    <p class="sub">One web application, tested white-box/gray-box: you give us staging access, test accounts for each role, and any architecture documentation you can share. More context means deeper testing.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>What gets tested</h3>
+        <ul>
+          <li>Authentication and session management</li>
+          <li>Authorization — including clinical vs. administrative role separation</li>
+          <li>Input validation: injection, cross-site scripting</li>
+          <li>Business logic and API endpoints</li>
+          <li>Healthcare-specific checks: PHI in responses, exports, error messages, and logs</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What you receive</h3>
+        <ul>
+          <li>Full findings report — severity, evidence, reproduction steps, remediation</li>
+          <li>Attestation letter for buyer and auditor requests</li>
+          <li>60-minute remediation call with your team</li>
+          <li>One retest within 30 days, with an updated attestation</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Terms, plainly</h3>
+        <ul>
+          <li>50% to schedule, 50% on report delivery</li>
+          <li>Report within 10 business days of the testing window closing</li>
+          <li>Signed engagement agreement and rules of engagement before any testing</li>
+          <li>Not included: production systems, real patient data, denial-of-service, social engineering, physical, internal-network, wireless, or mobile-app testing</li>
+        </ul>
+      </div>
+    </div>
+    <div class="price-band">
+      <div>
+        <div class="amount">$5,500</div>
+        <p>Flat, per application. No hourly meter, no quote process.</p>
+      </div>
+      <a class="btn-gold" style="padding:13px 24px;border-radius:9px;text-decoration:none;font-weight:700" href="#contact">Start with a scoping call</a>
+    </div>
+  </section>
+
+  <section id="method">
+    <p class="kicker">Method</p>
+    <h2>Checklist-driven, healthcare-aware</h2>
+    <p class="sub">Testing follows the OWASP Web Security Testing Guide — a published, repeatable methodology — with additional checks written specifically for applications that handle protected health information.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Staging and synthetic data only</h3>
+        <p>Testing never touches a production system or real patient data. If a staging environment with synthetic data isn't available, we will help you scope getting one — we won't test production instead.</p>
+      </div>
+      <div class="card">
+        <h3>Evidence you can act on</h3>
+        <p>Every finding ships with evidence and reproduction steps, rated by severity, with remediation written for your engineers — and a plain-language summary for the buyers who asked for the test.</p>
+      </div>
+      <div class="card">
+        <h3>Critical findings don't wait</h3>
+        <p>If testing turns up a critical vulnerability, you hear about it the same day — not for the first time in the final report.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="kicker">About</p>
+    <h2>Clinical systems first, security testing second — in that order</h2>
+    <p class="sub">Clinical Perimeter is the security practice of AugustInnovations LLC, founded by Taylor Augustin. Taylor has spent 7+ years in clinical systems — currently a Clinical Application Specialist II working with the eClinicalWorks EHR — supporting the software clinicians use every day, and now tests healthcare applications with that operational background: how clinical and administrative roles actually divide, where PHI tends to leak, and what a finding means for a care workflow, not just a scanner score.</p>
+  </section>
+
+  <section id="contact">
+    <p class="kicker">Contact</p>
+    <h2>Scope a test</h2>
+    <p class="sub">A 20-minute scoping call is the first step. Email us with the basics below and we'll set it up.</p>
+    <div class="warn"><strong>Do not send credentials, system access, or patient information by email.</strong> Access is exchanged only under a signed agreement, through a secure channel.</div>
+    <p style="margin-top:22px;font-size:17px">
+      <a href="mailto:hello@clinicalperimeter.com?subject=Penetration%20test%20scoping&body=1.%20What%20application%20is%20being%20tested%2C%20and%20what%20does%20it%20do%3F%0A%0A2.%20What%20data%20does%20it%20handle%20(PHI%2C%20PII%2C%20payment)%3F%0A%0A3.%20Why%20is%20the%20test%20needed%20now%20(buyer%20requirement%2C%20HIPAA%2C%20SOC%202%2C%20other)%3F%0A%0A4.%20Is%20there%20a%20staging%20environment%20with%20synthetic%20data%3F%0A%0A5.%20How%20many%20user%20roles%20exist%2C%20and%20can%20test%20accounts%20be%20provided%20for%20each%3F%0A%0A6.%20Is%20codebase%20or%20architecture%20documentation%20available%20to%20share%3F%0A%0A7.%20What%20deliverable%20do%20you%20need%20(report%2C%20attestation%2C%20both)%3F%0A%0A8.%20Who%20would%20sign%20the%20testing%20authorization%3F%0A%0A9.%20What%20is%20driving%20your%20deadline%3F%0A">hello@clinicalperimeter.com</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff">Clinical Perimeter</strong> — web application penetration testing for healthcare software vendors<br>
+    AugustInnovations LLC dba Clinical Perimeter · Plumas Lake, California</div>
+    <p class="fine">© 2026 AugustInnovations LLC. This site describes penetration testing services performed under signed agreement, on staging systems with synthetic data only. It is not a certification of any system's security.</p>
+  </div>
+</footer>
+
+</body>
+</html>
