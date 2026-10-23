@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rules of Engagement — Clinical Perimeter</title>
+<link rel="canonical" href="https://clinicalperimeter.com/rules-of-engagement.html">
+<style>
+  :root{
+    --ink:#14201C; --deep:#0C2B26; --teal:#0E7A63; --teal-dark:#0A5C4B;
+    --mint:#E7F2EE; --paper:#FAFAF7; --card:#FFFFFF; --line:#DDE5E0;
+    --muted:#54655E; --accent:#C9902E; --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  header{background:var(--deep);color:#fff}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+  .brand{font-weight:800;font-size:22px;letter-spacing:.4px}
+  .brand span{color:#7FD1BC}
+  .brand small{display:block;font-weight:500;font-size:12.5px;color:#A9C6BE;letter-spacing:0}
+  nav a{color:#E4F0EC;text-decoration:none;margin-left:22px;font-size:15px}
+  nav a:hover{color:#7FD1BC}
+  nav a.cta{background:var(--accent);color:#221A08;padding:8px 16px;border-radius:8px;font-weight:700}
+  nav a.cta:hover{color:#221A08;background:#DCA53E}
+  .hero{background:linear-gradient(180deg,var(--deep) 0%,#0A201B 100%);color:#fff;padding:56px 0 64px}
+  .hero h1{font-size:41px;line-height:1.16;margin:0 0 18px;font-weight:800}
+  .hero h1 em{font-style:normal;color:#7FD1BC}
+  .hero p.lede{font-size:19.5px;color:#CFE2DC;max-width:740px;margin:0 0 28px}
+  .hero .actions a{display:inline-block;margin-right:14px;padding:13px 24px;border-radius:9px;text-decoration:none;font-weight:700;font-size:16px}
+  .btn-gold{background:var(--accent);color:#221A08}
+  .btn-ghost{border:1.5px solid #5E857A;color:#E4F0EC}
+  .hero .note{margin-top:22px;font-size:14px;color:#93B3AA}
+  section{padding:56px 0 6px}
+  h2{font-size:28px;color:var(--deep);margin:0 0 8px;font-weight:800}
+  .kicker{text-transform:uppercase;letter-spacing:2.5px;font-size:12.5px;color:var(--teal);font-weight:700;margin:0 0 10px}
+  .sub{color:var(--muted);max-width:760px;margin:0 0 30px;font-size:17px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .card h3{margin:0 0 8px;font-size:18px;color:var(--deep)}
+  .card p{margin:0 0 10px;font-size:15.5px;color:#33423C}
+  .card ul{margin:0;padding-left:18px;font-size:15.5px;color:#33423C}
+  .card li{margin-bottom:6px}
+  .price-band{background:var(--deep);color:#E4F0EC;border-radius:var(--radius);padding:32px 36px;margin:26px 0 6px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+  .price-band .amount{font-size:38px;font-weight:800;color:#fff}
+  .price-band p{margin:4px 0 0;color:#A9C6BE;font-size:15.5px;max-width:520px}
+  .warn{background:#FDF6E4;border:1px solid #EBD9A0;border-radius:var(--radius);padding:18px 22px;font-size:15.5px;color:#5C4A12}
+  footer{background:#081C18;color:#A9C6BE;margin-top:64px;padding:38px 0 30px;font-size:14.5px}
+  footer a{color:#E4F0EC}
+  footer .fine{margin-top:22px;padding-top:16px;border-top:1px solid #1D3A34;font-size:13px;color:#77958B}
+  @media (max-width:640px){ .hero h1{font-size:31px} nav a{margin-left:14px} nav a.hideS{display:none} }
+
+  main.wrap{padding-top:34px;padding-bottom:10px}
+  main h1{font-size:30px;color:var(--deep);line-height:1.25}
+  main h2{font-size:22px}
+  table{border-collapse:collapse;width:100%;margin:14px 0}
+  th,td{border:1px solid var(--line);padding:8px 12px;text-align:left}
+  th{background:var(--mint)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap topbar">
+    <div class="brand">Clinical <span>Perimeter</span>
+      <small>AugustInnovations LLC dba Clinical Perimeter</small>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Service sheet</a>
+      <a href="index.html#contact">Scope a test</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Rules of Engagement — Web Application Penetration Test</h1>
+<p><strong>[TEMPLATE — complete all bracketed fields and have both parties sign before any testing begins. No testing is authorized until the companion Testing Authorization is also signed.]</strong></p>
+<p><strong>Provider:</strong> AugustInnovations LLC dba Clinical Perimeter ("Clinical Perimeter"), Plumas Lake, California · hello@clinicalperimeter.com
+<strong>Client:</strong> [CLIENT LEGAL NAME] ("Client")
+<strong>Engagement reference:</strong> [ENGAGEMENT ID, e.g., CP-2026-___]
+<strong>Date:</strong> [DATE]</p>
+<h2>1. Scope</h2>
+<ul>
+<li><strong>Application in scope:</strong> [APPLICATION NAME], staging environment only</li>
+<li><strong>In-scope URLs / hostnames:</strong> [LIST EVERY HOSTNAME, SUBDOMAIN, AND API BASE URL]</li>
+<li><strong>In-scope accounts/roles:</strong> [LIST TEST ACCOUNTS AND ROLES TO BE PROVIDED BY CLIENT]</li>
+<li><strong>Testing approach:</strong> White-box / gray-box (circle or delete one in the executed copy)</li>
+<li><strong>Explicitly out of scope:</strong> production systems and any system containing real protected health information (PHI); denial-of-service and load testing; social engineering and phishing; physical security; internal-network, wireless, and mobile-application testing; any host, account, or system not listed above; [ADDITIONAL CLIENT-SPECIFIC EXCLUSIONS]</li>
+</ul>
+<h2>2. Testing window</h2>
+<ul>
+<li><strong>Start:</strong> [DATE AND TIME, WITH TIME ZONE]</li>
+<li><strong>End:</strong> [DATE AND TIME, WITH TIME ZONE]</li>
+<li>Testing occurs only inside this window. Any extension requires written agreement (email is sufficient) from both parties before the original window closes.</li>
+</ul>
+<h2>3. Authorized techniques</h2>
+<p>Within scope and window, Clinical Perimeter may: probe and enumerate the application and its APIs; attempt authentication and session attacks against test accounts; test authorization boundaries between roles and tenants using test accounts; submit malicious and malformed input to test validation and injection defenses; inspect responses, exports, error messages, and accessible logs for PHI exposure; and use automated scanners and manual techniques consistent with the OWASP Web Security Testing Guide.</p>
+<h2>4. Prohibited actions</h2>
+<p>Clinical Perimeter will not: access, copy, or retain real PHI (if real PHI is encountered, testing on that path stops immediately and §8 applies); perform denial-of-service, load, or stress testing; attempt social engineering or phishing; test any out-of-scope system; exfiltrate data beyond the minimum evidence needed to document a finding; or make persistent changes to the staging environment beyond what a finding's reproduction requires (any such change is documented and reported the same day).</p>
+<h2>5. Test data and accounts</h2>
+<p>Client provides test accounts and a staging environment loaded with <strong>synthetic data only</strong>. Client confirms the staging environment contains no real PHI at the start of the window: [CLIENT INITIALS]. Credentials are exchanged through [SECURE CHANNEL — NOT EMAIL] and are rotated or revoked by Client at the end of the engagement.</p>
+<h2>6. Contacts and escalation</h2>
+<ul>
+<li><strong>Client technical contact:</strong> [NAME, EMAIL, PHONE]</li>
+<li><strong>Client escalation contact (incidents):</strong> [NAME, EMAIL, PHONE]</li>
+<li><strong>Clinical Perimeter tester:</strong> Taylor Augustin, hello@clinicalperimeter.com, [PHONE]</li>
+<li>Either party may pause testing immediately by contacting the other party's contact above. A pause is confirmed in writing (email is sufficient).</li>
+</ul>
+<h2>7. Handling of findings and evidence</h2>
+<p>Evidence is captured only as needed to document findings, stored encrypted by Clinical Perimeter, and handled per Clinical Perimeter's evidence-handling procedure. Findings are confidential to Client and are disclosed only to Client's named recipients: [RECIPIENT NAMES/ROLES]. Evidence retention and destruction follow the engagement agreement: [RETENTION PERIOD / DESTRUCTION TERMS, or "per engagement agreement dated [DATE]"].</p>
+<h2>8. Incident procedure</h2>
+<p>If testing appears to cause instability, data exposure, or any impact beyond the staging environment, the tester stops, preserves minimal evidence, and notifies the Client escalation contact <strong>immediately</strong> by phone and email. Testing resumes only with Client's written approval.</p>
+<h2>9. Deliverables</h2>
+<p>Full findings report, attestation letter, 60-minute remediation call, and one retest within 30 days of report delivery — per the engagement agreement / service sheet dated [DATE]. Report delivery within 10 business days of the testing window closing.</p>
+<h2>10. Signatures</h2>
+<p>Agreed and accepted:</p>
+<p><strong>Clinical Perimeter</strong> — AugustInnovations LLC dba Clinical Perimeter
+Signature: ______________________________ Name: Taylor Augustin, [TITLE] Date: __________</p>
+<p><strong>Client</strong> — [CLIENT LEGAL NAME]
+Signature: ______________________________ Name: [NAME], [TITLE] Date: __________</p>
+</main>
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff">Clinical Perimeter</strong> — web application penetration testing for healthcare software vendors<br>
+    AugustInnovations LLC dba Clinical Perimeter · Plumas Lake, California</div>
+    <p class="fine">© 2026 AugustInnovations LLC · <a href="index.html">clinicalperimeter.com</a> · <a href="mailto:hello@clinicalperimeter.com">hello@clinicalperimeter.com</a></p>
+  </div>
+</footer>
+</body>
+</html>

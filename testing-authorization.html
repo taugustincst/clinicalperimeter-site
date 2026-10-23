@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Testing Authorization — Clinical Perimeter</title>
+<link rel="canonical" href="https://clinicalperimeter.com/testing-authorization.html">
+<style>
+  :root{
+    --ink:#14201C; --deep:#0C2B26; --teal:#0E7A63; --teal-dark:#0A5C4B;
+    --mint:#E7F2EE; --paper:#FAFAF7; --card:#FFFFFF; --line:#DDE5E0;
+    --muted:#54655E; --accent:#C9902E; --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  header{background:var(--deep);color:#fff}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+  .brand{font-weight:800;font-size:22px;letter-spacing:.4px}
+  .brand span{color:#7FD1BC}
+  .brand small{display:block;font-weight:500;font-size:12.5px;color:#A9C6BE;letter-spacing:0}
+  nav a{color:#E4F0EC;text-decoration:none;margin-left:22px;font-size:15px}
+  nav a:hover{color:#7FD1BC}
+  nav a.cta{background:var(--accent);color:#221A08;padding:8px 16px;border-radius:8px;font-weight:700}
+  nav a.cta:hover{color:#221A08;background:#DCA53E}
+  .hero{background:linear-gradient(180deg,var(--deep) 0%,#0A201B 100%);color:#fff;padding:56px 0 64px}
+  .hero h1{font-size:41px;line-height:1.16;margin:0 0 18px;font-weight:800}
+  .hero h1 em{font-style:normal;color:#7FD1BC}
+  .hero p.lede{font-size:19.5px;color:#CFE2DC;max-width:740px;margin:0 0 28px}
+  .hero .actions a{display:inline-block;margin-right:14px;padding:13px 24px;border-radius:9px;text-decoration:none;font-weight:700;font-size:16px}
+  .btn-gold{background:var(--accent);color:#221A08}
+  .btn-ghost{border:1.5px solid #5E857A;color:#E4F0EC}
+  .hero .note{margin-top:22px;font-size:14px;color:#93B3AA}
+  section{padding:56px 0 6px}
+  h2{font-size:28px;color:var(--deep);margin:0 0 8px;font-weight:800}
+  .kicker{text-transform:uppercase;letter-spacing:2.5px;font-size:12.5px;color:var(--teal);font-weight:700;margin:0 0 10px}
+  .sub{color:var(--muted);max-width:760px;margin:0 0 30px;font-size:17px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .card h3{margin:0 0 8px;font-size:18px;color:var(--deep)}
+  .card p{margin:0 0 10px;font-size:15.5px;color:#33423C}
+  .card ul{margin:0;padding-left:18px;font-size:15.5px;color:#33423C}
+  .card li{margin-bottom:6px}
+  .price-band{background:var(--deep);color:#E4F0EC;border-radius:var(--radius);padding:32px 36px;margin:26px 0 6px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+  .price-band .amount{font-size:38px;font-weight:800;color:#fff}
+  .price-band p{margin:4px 0 0;color:#A9C6BE;font-size:15.5px;max-width:520px}
+  .warn{background:#FDF6E4;border:1px solid #EBD9A0;border-radius:var(--radius);padding:18px 22px;font-size:15.5px;color:#5C4A12}
+  footer{background:#081C18;color:#A9C6BE;margin-top:64px;padding:38px 0 30px;font-size:14.5px}
+  footer a{color:#E4F0EC}
+  footer .fine{margin-top:22px;padding-top:16px;border-top:1px solid #1D3A34;font-size:13px;color:#77958B}
+  @media (max-width:640px){ .hero h1{font-size:31px} nav a{margin-left:14px} nav a.hideS{display:none} }
+
+  main.wrap{padding-top:34px;padding-bottom:10px}
+  main h1{font-size:30px;color:var(--deep);line-height:1.25}
+  main h2{font-size:22px}
+  table{border-collapse:collapse;width:100%;margin:14px 0}
+  th,td{border:1px solid var(--line);padding:8px 12px;text-align:left}
+  th{background:var(--mint)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap topbar">
+    <div class="brand">Clinical <span>Perimeter</span>
+      <small>AugustInnovations LLC dba Clinical Perimeter</small>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Service sheet</a>
+      <a href="index.html#contact">Scope a test</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Testing Authorization — Penetration Testing Permission Letter</h1>
+<p><strong>[TEMPLATE — to be executed on Client letterhead (or as a countersigned attachment to the Rules of Engagement) before any testing begins. Clinical Perimeter performs no testing without this authorization in hand.]</strong></p>
+<p>[CLIENT LETTERHEAD]</p>
+<p><strong>Date:</strong> [DATE]
+<strong>To:</strong> AugustInnovations LLC dba Clinical Perimeter, Plumas Lake, California
+<strong>Re:</strong> Authorization to perform web application penetration testing
+<strong>Engagement reference:</strong> [ENGAGEMENT ID, e.g., CP-2026-___]</p>
+<h2>Authorization</h2>
+<p>[CLIENT LEGAL NAME] ("Client") hereby authorizes AugustInnovations LLC dba Clinical Perimeter ("Clinical Perimeter"), and specifically its tester <strong>Taylor Augustin</strong>, to perform penetration testing of the application and systems described below, during the window stated below, in accordance with the Rules of Engagement dated [ROE DATE] and the engagement agreement dated [AGREEMENT DATE].</p>
+<h2>Systems authorized for testing</h2>
+<ul>
+<li><strong>Application:</strong> [APPLICATION NAME AND VERSION, IF KNOWN]</li>
+<li><strong>Environment:</strong> Staging only</li>
+<li><strong>Hostnames / URLs / API base URLs:</strong> [LIST — EXHAUSTIVE]</li>
+<li><strong>Test accounts and roles:</strong> [LIST OR REFERENCE ATTACHMENT]</li>
+</ul>
+<p>No other system, host, account, or environment is authorized. Production systems and any system containing real protected health information are <strong>expressly excluded</strong>.</p>
+<h2>Testing window</h2>
+<p>From <strong>[START DATE/TIME, TIME ZONE]</strong> to <strong>[END DATE/TIME, TIME ZONE]</strong>. Authorization expires at the end of the window unless extended in writing by an authorized signatory below.</p>
+<h2>Authority of signatory</h2>
+<p>The undersigned represents and warrants that:</p>
+<ol>
+<li>They are authorized to grant this permission on behalf of Client.</li>
+<li>Client owns the systems listed above, or has obtained all permissions necessary from their owners and hosting providers to authorize this testing.</li>
+<li>The staging environment listed above contains synthetic data only and no real protected health information.</li>
+<li>Client has notified its hosting provider / security team as required by its own policies: [YES / NOT APPLICABLE — DELETE ONE IN EXECUTED COPY].</li>
+</ol>
+<h2>Emergency contact</h2>
+<p>During the testing window, Client's contact for any incident or question arising from the testing is:</p>
+<ul>
+<li><strong>Name:</strong> [NAME] · <strong>Title:</strong> [TITLE]</li>
+<li><strong>Email:</strong> [EMAIL] · <strong>Phone:</strong> [PHONE]</li>
+</ul>
+<h2>Signature</h2>
+<p><strong>[CLIENT LEGAL NAME]</strong></p>
+<p>Signature: ______________________________
+Name: [NAME] · Title: [TITLE] · Date: __________</p>
+<hr />
+<p><strong>Acknowledged by Clinical Perimeter:</strong></p>
+<p>Signature: ______________________________
+Taylor Augustin, AugustInnovations LLC dba Clinical Perimeter · Date: __________</p>
+</main>
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff">Clinical Perimeter</strong> — web application penetration testing for healthcare software vendors<br>
+    AugustInnovations LLC dba Clinical Perimeter · Plumas Lake, California</div>
+    <p class="fine">© 2026 AugustInnovations LLC · <a href="index.html">clinicalperimeter.com</a> · <a href="mailto:hello@clinicalperimeter.com">hello@clinicalperimeter.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
