@@ -64,7 +64,7 @@
       <a class="hideS" href="#method">Method</a>
       <a class="hideS" href="#about">About</a>
       <a class="hideS" href="services.html">Documents</a>
-      <a class="cta" href="#contact">Scope a test</a>
+      <a class="cta" href="#contact" data-lead-open>Scope a test</a>
     </nav>
   </div>
 </header>
@@ -74,7 +74,7 @@
     <h1>Penetration testing for <em>healthcare software</em>, by someone who has run it.</h1>
     <p class="lede">Your buyers are asking how you protect patient data. Clinical Perimeter tests your web application the way an attacker would — in staging, with synthetic data — and gives you the report and attestation letter your buyers, your HIPAA risk analysis, and your SOC 2 prep actually ask for.</p>
     <div class="actions">
-      <a class="btn-gold" href="#contact">Scope a test</a>
+      <a class="btn-gold" href="#contact" data-lead-open>Scope a test</a>
       <a class="btn-ghost" href="#offer">See what's included</a>
     </div>
     <p class="note">One application. One flat fee. No production systems, no real patient data — ever.</p>
@@ -122,7 +122,7 @@
         <div class="amount">Flat-fee, per application</div>
         <p>One price, agreed in writing before testing begins. No hourly meter.</p>
       </div>
-      <a class="btn-gold" style="padding:13px 24px;border-radius:9px;text-decoration:none;font-weight:700" href="#contact">Start with a scoping call</a>
+      <a class="btn-gold" style="padding:13px 24px;border-radius:9px;text-decoration:none;font-weight:700" href="#contact" data-lead-open>Start with a scoping call</a>
     </div>
   </section>
 
@@ -160,6 +160,18 @@
     <p style="margin-top:22px;font-size:17px">
       <a href="mailto:hello@clinicalperimeter.com?subject=Penetration%20test%20scoping&body=1.%20What%20application%20is%20being%20tested%2C%20and%20what%20does%20it%20do%3F%0A%0A2.%20What%20data%20does%20it%20handle%20(PHI%2C%20PII%2C%20payment)%3F%0A%0A3.%20Why%20is%20the%20test%20needed%20now%20(buyer%20requirement%2C%20HIPAA%2C%20SOC%202%2C%20other)%3F%0A%0A4.%20Is%20there%20a%20staging%20environment%20with%20synthetic%20data%3F%0A%0A5.%20How%20many%20user%20roles%20exist%2C%20and%20can%20test%20accounts%20be%20provided%20for%20each%3F%0A%0A6.%20Is%20codebase%20or%20architecture%20documentation%20available%20to%20share%3F%0A%0A7.%20What%20deliverable%20do%20you%20need%20(report%2C%20attestation%2C%20both)%3F%0A%0A8.%20Who%20would%20sign%20the%20testing%20authorization%3F%0A%0A9.%20What%20is%20driving%20your%20deadline%3F%0A">hello@clinicalperimeter.com</a>
     </p>
+    <p class="sub" style="margin-top:26px">Or start here — answer what you can in the message field and we'll take it from the scoping call:</p>
+    <form class="lead-form" data-lead-form data-inbox="hello@clinicalperimeter.com" data-site="clinicalperimeter.com" data-seed="cp-scoping" data-seed-interest="Penetration test scoping" novalidate>
+      <div class="lf-grid">
+        <label class="lf-field"><span>Your name *</span><input type="text" name="name" autocomplete="name" required></label>
+        <label class="lf-field"><span>Email *</span><input type="email" name="email" autocomplete="email" required></label>
+        <label class="lf-field"><span>Organization (optional)</span><input type="text" name="org" autocomplete="organization"></label>
+        <label class="lf-field"><span>I'm interested in</span><select name="interest"><option selected>Penetration test scoping</option><option>General question</option></select></label>
+      </div>
+      <label class="lf-field"><span>Message *</span><textarea name="message" rows="10" required></textarea></label>
+      <button type="submit" class="lf-send">Send message</button>
+      <p class="lf-note">Sending opens your email app with your message addressed to hello@clinicalperimeter.com. Do not include credentials, system access, or patient information.</p>
+    </form>
   </section>
 
 </main>
@@ -173,5 +185,6 @@
   </div>
 </footer>
 
+<script src="lead.js" data-inbox="hello@clinicalperimeter.com" data-brand="Clinical Perimeter" data-site="clinicalperimeter.com" data-interests="Penetration test scoping|General question" data-interest="Penetration test scoping" data-head="#0C2B26" data-accent="#C9902E" data-accent-ink="#0C2B26" data-seed="cp-scoping" data-seed-interest="Penetration test scoping"></script>
 </body>
 </html>
